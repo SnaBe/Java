@@ -1,5 +1,5 @@
 # ReadMe for Java
-I began taking Java lessons in school, some of projects and assignments will be uploaded to this folder.
+I began taking Java lessons in school, some of the projects and assignments will be uploaded to this folder.
 
 All code here is written in Java (Hence the name) 
 Most of the code is edited using Netbeans if anyone was wondering.
