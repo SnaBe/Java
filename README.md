@@ -1,4 +1,4 @@
-## ReadMe for Java
+# ReadMe for Java
 I began taking Java lessons in school, some of projects and assignments will be uploaded to this folder.
 
 All code here is written in Java (Hence the name) 
@@ -9,7 +9,7 @@ Quick description: Public java code from school lessons.
 Current projects: 
 Note: Not all projects are uploaded fully, some may miss some packages or other classes.
 
-# Cylinder calculator (Using user input) 
+## Cylinder calculator (Using user input) 
 This is our current school project, my plan is to turn it into a standalone program or web-application.
 
 
