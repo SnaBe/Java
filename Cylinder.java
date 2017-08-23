@@ -4,7 +4,7 @@ public class Cylinder
     public static void main(String[] args) 
     {
         //Vi bruger double da en cylinder kan have en radius eller hoejde der indholde decimal tal
-        double radius,hight;
+        double radius,height;
         
         //Lad brugeren indtaste radius den kendte radius af cylinderen
         System.out.println("Indtast radius: ");
@@ -12,13 +12,13 @@ public class Cylinder
         
         //Lad brugeren indtaste den kendte hoejde af cylinderen
         System.out.println("Indtast hoejde");
-        hight = Keyboard.readDouble();
+        height = Keyboard.readDouble();
         
         //Java beregner rumfanget af brugerns valgte cylinder
-        double volumen = radius * radius * hight * Math.PI;
+        double volumen = radius * radius * height * Math.PI;
         
         //Java printer brugerns cylinders radius, hoejde samt den beregnet volume
-        System.out.println("Cylinderens hoejde: " + hight);
+        System.out.println("Cylinderens hoejde: " + height);
         System.out.println("Cylinderens radius: " + radius);
         System.out.println("Cylinderens volume: " + volumen);
     }
