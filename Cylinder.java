@@ -15,7 +15,7 @@ public class Cylinder
         hight = Keyboard.readDouble();
         
         //Java beregner rumfanget af brugerns valgte cylinder
-        double volumen = radius * radius * hight * 3.14;
+        double volumen = radius * radius * hight * Math.PI;
         
         //Java printer brugerns cylinders radius, hoejde samt den beregnet volume
         System.out.println("Cylinderens hoejde: " + hight);
