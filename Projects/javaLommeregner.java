@@ -1,8 +1,8 @@
 /**
- * @author Simon
+ * @author Simon "SnaBe" Sørensen
  */
 
-//A shot at Java calculator using Scanner and Keyboard input
+//A shot at a Java calculator using Scanner and Keyboard input
 
 import java.util.Scanner;
 
