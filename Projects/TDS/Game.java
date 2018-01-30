@@ -12,6 +12,7 @@ public class Game extends Canvas implements Runnable
     //Private variabler
     private boolean isRunning = false;
     private Thread thread;
+    private Handler handler;
     
     //Vores spil konstruktør
     public Game()
@@ -20,6 +21,10 @@ public class Game extends Canvas implements Runnable
         Window Window = new Window(1000, 563, "Top Down Shooter", this);
         //Kør vores start metode.
         start();
+        
+        handler = new Handler();
+        
+        handler.addObject(new GameBox(100, 100, ID.Block));
     }
     //Start metode
     private void start()
@@ -76,7 +81,7 @@ public class Game extends Canvas implements Runnable
     //Checker 60 gange i sekundet.
     private void tick() 
     {
-      
+      handler.tick();
     }     
     
     //Vi bruger vores render metode til at 'reander' alt vores grafik osv.
@@ -94,6 +99,8 @@ public class Game extends Canvas implements Runnable
         
         g.setColor(Color.darkGray);
         g.fillRect(0,0,1000,563);
+        
+        handler.render(g);
         
         //Efter denne kommentar kan vi ikke længere 'tegne' noget grafisk.
         g.dispose();
