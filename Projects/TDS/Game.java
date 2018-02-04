@@ -23,15 +23,16 @@ public class Game extends Canvas implements Runnable
         start();
         
         handler = new Handler();
+        this.addKeyListener(new KeyInput(handler));
         
-        handler.addObject(new GameBox(100, 100, ID.Block));
+        handler.addObject(new Character(100,100,ID.Player,handler));
     }
     //Start metode
     private void start()
     {
         isRunning = true;
-        thread = new Thread(this); //This kalder vores run metode
-        thread.start();
+        thread = new Thread(this); //This, kalder vores run metode
+        thread.start(); //Start vores thread
     }
     //Stop metode
     private void stop()
@@ -97,18 +98,19 @@ public class Game extends Canvas implements Runnable
         Graphics g = bs.getDrawGraphics();
         //Efter denne kommentar kan vi 'tegne' alt vores grafik.
         
-        g.setColor(Color.darkGray);
-        g.fillRect(0,0,1000,563);
+        g.setColor(Color.darkGray); //Vores baggrunds farve.
+        g.fillRect(0,0,1000,563); //Hvor meget af vores vindue skal fyldes.
         
         handler.render(g);
         
         //Efter denne kommentar kan vi ikke længere 'tegne' noget grafisk.
-        g.dispose();
+        g.dispose(); 
         bs.show();
     }
     //Vores main metode, starter vores spil (Game)
     public static void main(String args[]) 
     {
+        //Når filen køres, start vores spil
         new Game();
     }
 }
