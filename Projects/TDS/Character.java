@@ -28,7 +28,7 @@ public class Character extends GameObject
         x += velX;
         y += velY;
         
-        //Vi flytter vores karakter, på bagrund af hvilket knapper vi trypper på
+        //Vi flytter vores karakter, på bagrund af hvilket knapper vi trygger på
         if(handler.isUp()) velY = -5;
         else if(!handler.isDown()) velY = 0;
         
